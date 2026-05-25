@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
 import '../widgets/perspective_card.dart';
-// Import da nova tela de Login
+
+// Imports das telas
 import 'employee/employee_login_screen.dart';
 import 'psicologo/tela_dashboard_psicologo.dart';
 
@@ -62,7 +63,7 @@ class ChoosePerspectiveScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Card atualizado apontando para a Tela de Login
+                    // Opção 1: Colaborador
                     PerspectiveCard(
                       title: 'Colaborador',
                       subtitle: 'Acesse check-ins de humor, recursos e o ...',
@@ -78,6 +79,7 @@ class ChoosePerspectiveScreen extends StatelessWidget {
                       },
                     ),
 
+                    // Opção 3: Psicólogo
                     PerspectiveCard(
                       title: 'Psicólogo',
                       subtitle:
@@ -99,7 +101,6 @@ class ChoosePerspectiveScreen extends StatelessWidget {
 
                     const SizedBox(height: 24),
 
-                    // Adicionado 'const' na Row inteira por boas práticas, já que os filhos são estáticos
                     const Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
